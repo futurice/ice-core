@@ -22,4 +22,4 @@ export default defineConfig({
     plugins: [
         postcssLit(),
     ]
-})
+});
