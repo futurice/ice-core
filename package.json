@@ -1,0 +1,44 @@
+{
+    "name": "@futurice/ice-core",
+    "version": "0.0.0",
+    "description": "Web component library by Futurice.",
+    "keywords": [
+        "web",
+        "components",
+        "lit"
+    ],
+    "homepage": "https://github.com/futurice/ice-core",
+    "contributors": [
+        {
+            "name": "フィリップ",
+            "email": "hello+git@fillip.pro"
+        }
+    ],
+    "license": "MIT",
+    "repository": "https://github.com/futurice/ice-core.git",
+    "files": [
+        "lib",
+        "types"
+    ],
+    "type": "module",
+    "types": "./lib/lib.d.ts",
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "dependencies": {
+        "lit": "^2.2.1"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.23",
+        "postcss-import": "^14.1.0",
+        "postcss-preset-env": "^7.4.3",
+        "rollup-plugin-postcss-lit": "^2.0.0",
+        "typescript": "^4.6.3",
+        "vite": "^2.8.6"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite --config build/vite.config.ts build ./",
+        "preview": "vite --config build/vite.config.ts preview ./"
+    }
+}

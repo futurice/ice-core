@@ -1,0 +1,12 @@
+# Build Artifacts
+lib
+types
+
+# Dependencies
+node_modules
+
+# Platform Artifacts
+.DS_Store
+
+# Development Tools
+.vscode
