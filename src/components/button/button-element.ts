@@ -23,8 +23,10 @@ class IceButtonElement extends IceElement {
     static styles = unsafeCSS(buttonElementStyle);
 
     render() {
+        const disabled = this.isDisabled ? "disabled" : "";
+        
         return html`
-            <button class="button ${this.variant} ${this.isDisabled ? 'disabled' : ''}">
+            <button class="button ${this.variant} ${disabled}}">
                 <p>
                     <slot></slot>
                 </p>

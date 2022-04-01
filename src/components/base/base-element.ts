@@ -5,4 +5,4 @@ import { LitElement } from "lit";
  */
 class IceElement extends LitElement {}
 
-export default IceElement
+export default IceElement;

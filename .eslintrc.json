@@ -1,0 +1,24 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "jsdoc"],
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier", "plugin:jsdoc/recommended"],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "env": {
+        "es2022": true,
+        "node": true
+    },
+    "rules": {
+        "no-var": "error",
+        "semi": ["error", "always"],
+        "quotes": ["error", "double", { "avoidEscape": true }],
+        "indent": ["error", 4, { "SwitchCase": 1, "ignoredNodes": ["PropertyDefinition"] }],
+        "no-multi-spaces": "error",
+        "space-in-parens": "error",
+        "no-multiple-empty-lines": "error",
+        "prefer-const": "error",
+        /** TypeScript types are not supported in ESLint. */
+        "jsdoc/require-param-type": 0
+    }
+}
