@@ -1,4 +1,4 @@
-import { LitElement } from "lit";
+import { LitElement } from 'lit';
 
 /**
  * Provides a common, non-reactive, base `HTMLElement`.

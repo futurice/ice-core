@@ -1,30 +1,37 @@
 {
-    "compilerOptions": {
-        "module": "es2020",
-        "lib": [
-            "es2019",
-            "dom",
-            "dom.iterable"
-        ],
-        "declaration": true,
-        "emitDeclarationOnly": false,
-        "outDir": "./lib",
-        "strict": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "noImplicitReturns": true,
-        "noFallthroughCasesInSwitch": true,
-        "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true,
-        "experimentalDecorators": true,
-        "forceConsistentCasingInFileNames": true,
-        "useDefineForClassFields": false,
-        "target": "es2020",
-        "isolatedModules": true,
-        "esModuleInterop": true
-    },
-    "include": [
-        "./src/**/*.ts"
-    ],
-    "references": [{ "path": "./tsconfig.node.json" }]
+	"compilerOptions": {
+		"module": "es2020",
+		"lib": [
+			"es2019",
+			"dom",
+			"dom.iterable"
+		],
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"outDir": "./lib",
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"useDefineForClassFields": false,
+		"target": "es2020",
+		"isolatedModules": true,
+		"esModuleInterop": true
+	},
+	"exclude": [
+		"./node_modules/**"
+	],
+	"include": [
+		"./**/*.ts"
+	],
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		}
+	]
 }

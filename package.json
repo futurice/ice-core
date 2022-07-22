@@ -18,9 +18,11 @@
     "repository": "https://github.com/futurice/ice-core.git",
     "files": [
         "lib",
+        "src",
         "types"
     ],
     "type": "module",
+    "module": "./lib/ice-core.js",
     "types": "./lib/lib.d.ts",
     "engines": {
         "node": ">=16.0.0"
@@ -29,23 +31,23 @@
         "lit": "^2.2.1"
     },
     "devDependencies": {
-        "@types/node": "^17.0.23",
-        "@typescript-eslint/eslint-plugin": "^5.17.0",
-        "@typescript-eslint/parser": "^5.17.0",
-        "eslint": "^8.12.0",
+        "@types/node": "^18.0.6",
+        "@typescript-eslint/eslint-plugin": "^5.30.7",
+        "@typescript-eslint/parser": "^5.30.7",
+        "eslint": "^8.20.0",
         "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-jsdoc": "^38.1.4",
-        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-jsdoc": "^39.3.3",
+        "eslint-plugin-prettier": "^4.2.1",
         "postcss-import": "^14.1.0",
-        "postcss-preset-env": "^7.4.3",
+        "postcss-preset-env": "^7.7.2",
         "rollup-plugin-postcss-lit": "^2.0.0",
-        "typescript": "^4.6.3",
-        "vite": "^2.8.6"
+        "typescript": "^4.7.4",
+        "vite": "^3.0.2"
     },
     "scripts": {
         "dev": "vite",
         "build": "vite --config build/vite.config.ts build ./",
-        "lint": "eslint --ignore-path .gitignore --ext .js,.mjs,.ts ./src",
+        "lint": "eslint --config src/.eslintrc.json --ignore-path .gitignore --ext .js,.mjs,.ts ./src",
         "lint:fix": "eslint --fix --ignore-path .gitignore --ext .js,.mjs,.ts ./src",
         "preview": "vite --config build/vite.config.ts preview ./"
     }
