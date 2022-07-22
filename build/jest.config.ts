@@ -9,10 +9,11 @@ export default async (): Promise<Config.InitialOptions> => {
 			}
 		},
 		'moduleNameMapper': {
-			'(.+)\\.js': '$1'
+			'\\.(css|less)$': '<rootDir>/../tests/__mocks__/css-mock.ts',
+			'^(\\.{1,2}/.*)\\.js$': '$1',
 		},
 		'preset': 'ts-jest',
-		'testEnvironment': 'node',
+		'testEnvironment': 'jsdom',
 		'transform': {
 			'node_modules/variables/.+\\.(j|t)sx?$': 'ts-jest'
 		},
